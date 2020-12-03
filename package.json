@@ -1,0 +1,29 @@
+{
+  "name": "@alexspirgel/isPlainObject",
+  "version": "1.0.0",
+  "author": "Alexander Spirgel",
+  "description": "Check to see if an object is a plain object.",
+  "license": "MIT",
+  "keywords": [
+    "plain",
+    "object"
+  ],
+  "main": "isPlainObject.js",
+  "files": [
+    "/isPlainObject.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexspirgel/isPlainObject.git"
+  },
+  "homepage": "https://github.com/alexspirgel/isPlainObject#readme",
+  "bugs": {
+    "url": "https://github.com/alexspirgel/isPlainObject/issues"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "devDependencies": {
+    "mocha": "^8.1.1"
+  }
+}
