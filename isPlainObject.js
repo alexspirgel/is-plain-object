@@ -1,5 +1,5 @@
 /*
-isPlainObject v1.0.1
+isPlainObject v1.0.2
 https://github.com/alexspirgel/isPlainObject
 */
 
