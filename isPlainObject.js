@@ -1,7 +1,5 @@
-/*
-isPlainObject v1.0.2
-https://github.com/alexspirgel/isPlainObject
-*/
+// isPlainObject v1.0.2
+// https://github.com/alexspirgel/isPlainObject
 
 const isPlainObject = (object) => {
 	if (Object.prototype.toString.call(object) !== '[object Object]') {
@@ -22,4 +20,6 @@ const isPlainObject = (object) => {
 try {
 	module.exports = isPlainObject;
 }
-catch (e) {}
+catch (event) {
+	// suppress
+}
