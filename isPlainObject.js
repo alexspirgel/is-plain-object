@@ -20,6 +20,6 @@ const isPlainObject = (object) => {
 try {
 	module.exports = isPlainObject;
 }
-catch (event) {
+catch (error) {
 	// suppress
 }
