@@ -1,20 +1,24 @@
-// isPlainObject v1.0.2
+// isPlainObject v1.0.3
 // https://github.com/alexspirgel/isPlainObject
 
-const isPlainObject = (object) => {
-	if (Object.prototype.toString.call(object) !== '[object Object]') {
+const isPlainObject = (value) => {
+	if (typeof value !== 'object') {
 		return false;
 	}
-	if (object.constructor === undefined) {
-		return true;
-	}
-	if (Object.prototype.toString.call(object.constructor.prototype) !== '[object Object]') {
+	if (value === null) {
 		return false;
 	}
-	if (!object.constructor.prototype.hasOwnProperty('isPrototypeOf')) {
+	if (Object.prototype.toString.call(value) !== '[object Object]') {
 		return false;
 	}
-	return true;
+	if (Object.getPrototypeOf(value) === null) {
+    return true;
+  }
+	let prototype = value;
+  while (Object.getPrototypeOf(prototype) !== null) {
+    prototype = Object.getPrototypeOf(prototype);
+  }
+  return Object.getPrototypeOf(value) === prototype;
 };
 
 try {
