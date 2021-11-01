@@ -37,6 +37,42 @@ describe('isPlainObject', function () {
 			throw new Error();
 		});
 	});
+	describe('custom class', function () {
+		it(`should return false`, function () {
+			class TestClass {
+				constructor (value) {
+					this.foo = 'test';
+					this.bar = value;
+				}
+			}
+			let value = new TestClass('hello');
+			let result = isPlainObject(value);
+			if (result === false) {
+				return true;
+			}
+			throw new Error();
+		});
+	});
+	describe('class method', function () {
+		it(`should return false`, function () {
+			class TestClass {
+				constructor (value) {
+					this.foo = 'test';
+					this.bar = value;
+				}
+				action () {
+					return 'do something';
+				}
+			}
+			let value = new TestClass('hello');
+			value = value.action;
+			let result = isPlainObject(value);
+			if (result === false) {
+				return true;
+			}
+			throw new Error();
+		});
+	});
 	describe('native object (Error class)', function () {
 		it(`should return false`, function () {
 			let value = Error;
