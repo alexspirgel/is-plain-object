@@ -1,6 +1,6 @@
 {
   "name": "@alexspirgel/is-plain-object",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "author": "Alexander Spirgel",
   "description": "Check to see if an object is a plain object.",
   "license": "MIT",

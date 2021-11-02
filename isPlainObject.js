@@ -1,7 +1,4 @@
-// isPlainObject v1.0.4
-// https://github.com/alexspirgel/isPlainObject
-
-const isPlainObject = (value) => {
+function isPlainObject(value) {
 	if (typeof value !== 'object' ||
 	value === null ||
 	Object.prototype.toString.call(value) !== '[object Object]') {
@@ -15,11 +12,6 @@ const isPlainObject = (value) => {
     prototype = Object.getPrototypeOf(prototype);
   }
   return Object.getPrototypeOf(value) === prototype;
-};
+}
 
-try {
-	module.exports = isPlainObject;
-}
-catch (error) {
-	// suppress
-}
+module.exports = isPlainObject;
