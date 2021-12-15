@@ -1,4 +1,4 @@
-const isPlainObject = require('../isPlainObject.js');
+const isPlainObject = require('../is-plain-object.js');
 
 describe('isPlainObject', function () {
 	describe('plain object', function () {

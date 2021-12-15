@@ -1,5 +1,7 @@
-# isPlainObject
-Check to see if an object is a plain object.
+# Is Plain Object
+A utility function that returns `true` if the argument is a plain object. Otherwise returns `false`.
+
+For the purposes of this script, a plain object is an object that was created by explicitly specifying keys and values. An object created by a constructor is not a plain object.
 
 ## Installation
 

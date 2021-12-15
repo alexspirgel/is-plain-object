@@ -1,24 +1,26 @@
 {
   "name": "@alexspirgel/is-plain-object",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "author": "Alexander Spirgel",
-  "description": "Check to see if an object is a plain object.",
+  "description": "A utility function that returns true if the argument is a plain object. Otherwise returns false.",
   "license": "MIT",
   "keywords": [
+    "is-plain-object",
+    "isplainobject",
     "plain",
     "object"
   ],
-  "main": "isPlainObject.js",
+  "main": "is-plain-object.js",
   "files": [
-    "/isPlainObject.js"
+    "/is-plain-object.js"
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alexspirgel/isPlainObject.git"
+    "url": "git+https://github.com/alexspirgel/is-plain-object.git"
   },
-  "homepage": "https://github.com/alexspirgel/isPlainObject#readme",
+  "homepage": "https://github.com/alexspirgel/is-plain-object#readme",
   "bugs": {
-    "url": "https://github.com/alexspirgel/isPlainObject/issues"
+    "url": "https://github.com/alexspirgel/is-plain-object/issues"
   },
   "scripts": {
     "test": "mocha"
