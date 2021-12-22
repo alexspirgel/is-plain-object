@@ -5,13 +5,13 @@ function isPlainObject(value) {
 		return false;
 	}
 	if (Object.getPrototypeOf(value) === null) {
-    return true;
-  }
+		return true;
+	}
 	let prototype = value;
-  while (Object.getPrototypeOf(prototype) !== null) {
-    prototype = Object.getPrototypeOf(prototype);
-  }
-  return Object.getPrototypeOf(value) === prototype;
+	while (Object.getPrototypeOf(prototype) !== null) {
+		prototype = Object.getPrototypeOf(prototype);
+	}
+	return Object.getPrototypeOf(value) === prototype;
 }
 
 module.exports = isPlainObject;
